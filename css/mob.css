@@ -1,0 +1,121 @@
+@media screen and (max-width: 1025px) {
+    h1 {font-size: calc(74px / 1.3); font-weight: 700;}
+    h2 {font-size: calc(48px / 1.3); font-weight: 700;}
+    h3 {font-size: calc(40px / 1.3); font-weight: 400;}
+    h4 {font-size: calc(32px / 1.3); font-weight: 400;}
+    h5 {font-size: calc(24px / 1.3); font-weight: 400;}
+
+    .infoleft h2 b, .inforight h2 b {
+        font-size: calc(4.8rem / 1.3);
+    }
+    .infoleft h4 b, .inforight h4 b {
+        font-size: calc(3.2rem / 1.3);
+    }
+    .infoleft, .inforight {
+        margin: 0;
+    }
+    .card h3 {
+        font-size: calc((3.9vh / .72) / 1.3);
+    }
+    .card {
+        width: calc((41vh / .72) / 1.1);
+        height: calc((56vh / .72) / 1.1);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        position: inherit;
+        height: 100%;
+        gap: 5rem;
+    }
+
+    h1 {font-size: calc(74px / 1.5); font-weight: 700;}
+    h2 {font-size: calc(4.8rem / 1.9); font-weight: 700; line-height: 1;}
+    h3 {font-size: calc(40px / 1.5); font-weight: 400;}
+    h4 {font-size: calc(4vh / 1.4);  font-weight: 400;}
+    h5 {font-size: calc(24px / 1.5); font-weight: 400;}
+
+    .infoleft h2 b, .inforight h2 b {
+        font-size: calc(4.8rem / 1.9);
+    }
+    .infoleft h4 b, .inforight h4 b {
+        font-size: calc(4vh / 1.4);
+    }
+    .infoleft, .inforight {
+        margin: 0;
+    }
+    .card h3 {
+        font-size: min(7vw, 4.5vh);
+    }
+    .card {
+        max-width: calc(386vw / 4.5);
+        max-height: calc(452vw / 4.8);
+        border-radius: 2.2rem;
+    }
+    .background {
+        position: absolute;
+        top: 105vh;
+        left: -50vw;
+        height: 40vh;
+        transform: scale(2);
+    }
+    section, .secao {
+        min-width: 95vw;
+        height: 90vh;
+        flex-direction: column-reverse;
+        margin: 0;
+        gap: 3vh;
+        padding-top: 5rem;
+        scroll-snap-align: center;
+    }
+
+    #atracoes {
+        flex-direction: column;
+    }
+    #sobre {
+        margin-top: 8vh;
+        padding-bottom: 6rem;
+    }
+    .inforight, .infoleft {
+        margin: 0 8vw;
+    }
+
+    header {display: none;}
+
+    html, body {
+        scroll-snap-type: y mandatory;
+    }
+
+    .secao {
+        width: auto;
+        height: 100%;
+        gap: 5vh;
+    }
+
+    #equipe .persons {
+        flex-direction: column;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 4vh;
+    }
+    #equipe .persons .person {
+        max-width: 12vh;
+    }
+    #equipe .persons .person h5 {
+        font-size: calc(4vh / 2);
+    }
+    #equipe, .copy  {
+        margin: 0;
+        margin: 0;
+    }
+
+    .fundo  {
+        bottom: -400vh;
+    }
+
+    .textotopo {
+        margin-top: -15vh;
+    }
+}

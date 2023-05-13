@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    font-size: 62.5%;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    outline: none;
+    border: none;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+h1 {font-size: 74px; font-weight: 700;}
+h2 {font-size: 48px; font-weight: 700;}
+h3 {font-size: 40px; font-weight: 400;}
+h4 {font-size: 32px; font-weight: 400;}
+h5 {font-size: 24px; font-weight: 400;}
+
+a, p, span, li, input, button, label, select, option, textarea {
+    font-size: calc(1vmin + 10px);
+}
+
+body, .body {
+    background-color: #0D0D0D;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link button {
+    font-weight: medium;
+    color: #aaa;
+}
+
+.nav-link button:hover {
+    color: #fff;
+}
+
+.nav-link.active button {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: all .15s ease-in-out;
+
+}
+
+section {
+    max-width: 80vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: black;
+    background: #ffcc00;
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    align-items: center;
+}
+.inscrever button {
+    transition: all .15s ease-in-out;
+}
+.inscrever button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 .5rem 2rem -1rem rgba(255, 238, 0, 1);
+}
+.inscrever button:active {
+    background-color: #b3950f;
+    transform: scale(.98);
+    box-shadow: 0 .5rem 2rem -1rem rgba(255, 238, 0, 0);
+}
+
+button img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* -----------------------------------------PAGINA1------------------------------------ */
+
+#inicio {
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#inicio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos {
+    display: contents;
+}
+.logos img {
+    position: absolute;
+    bottom: calc(1vmin + 3rem);
+    width: 25vmax;
+    border-radius: 1rem;
+    mix-blend-mode: lighten;
+    background: #0d0d0d;
+    mix-blend-mode: normal;
+    
+}
+
+.eventhree, .eventhree a {
+    font-size: 1.2rem;
+}
+.eventhree a {
+    color: #ffcc00;
+    font-weight: bold;
+    border-bottom: 1px solid #ffcc00;
+}
+.eventhree a:hover {
+    color: #ffbb00;
+    border-bottom: 1px solid #ffbb00;
+}
+.textotopo {
+    gap: .2rem;
+}
+.textotopo h5 {
+    margin-bottom: 1rem;
+}
+.inscrever {
+    gap: 1rem;
+}
+
+/* -----------------------------------------PAGINA2------------------------------------ */
+
+.card {
+    width: calc(41vh / .72);
+    height: calc(56vh / .72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+.card h3 {
+    padding: 1.5rem;
+    font-size: calc(3.9vh / .72);
+    font-weight: 600;
+}
+
+.secao {
+    padding-top: 11vh;
+    height: 95vh;
+    gap: 5rem;
+}
+
+#sobre .card {
+    background: linear-gradient(209.15deg, #B703D7 2.04%, #5E11F7 100%);
+}
+
+.inforight, .infoleft {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+.inforight h4 b, .infoleft h4 b {
+    font-size: 3.2rem;
+}
+.inforight h2 b, .infoleft h2 b {
+    font-size: 4.8rem;
+}
+#sobre .inforight b {
+    color: #e551ff;
+}
+
+#atracoes .card {
+    background: linear-gradient(152.63deg, #FEC107 0%, #FF8A00 100%)
+}
+#atracoes .card h3 {
+    color: black;
+}
+.infoleft b {
+    color: #fec107;
+}
+
+#informacoes .card {
+    background: linear-gradient(209.15deg, #E8E8E8 2.04%, #5E5E5E 100%);
+}
+#informacoes .card h3 {
+    color: black;
+}
+
+#equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3vh;
+}
+#equipe h4 {
+    font-weight: 600;
+}
+#equipe img {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    object-fit: cover;
+    background: red;
+}
+
+.persons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+    align-items: baseline;
+    justify-items: center;
+}
+
+.person h5 {
+    font-size: 2rem;
+}
+
+.person {
+    max-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 70% at 50.04% 110%, #28002F 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    bottom: -570%;
+    left: 0;
+    z-index: -1;
+}
+.copy {
+    margin-bottom: -5rem;
+}
+
+@keyframes colorhue {
+    0% {filter: brightness(1) saturate(.3);}
+    50% {filter: brightness(2) saturate(1.2);}
+    100% {filter: brightness(1) saturate(.3);}}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    filter: hue-rotate(80deg);
+    mix-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background img {
+    margin-top: 25vh;
+    image-rendering: optimizeSpeed;
+    top: calc(0vh - 110%);
+    left: 0;
+    position: absolute;
+    mix-blend-mode: lighten;
+    animation: colorhue 10s ease-in-out infinite;
+}
+
+.fade {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    background-color: #0d0d0d;
+    z-index: -1;
+}
+
+.inscrever {
+    backdrop-filter: blur(50px);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.anunc h5 {
+    font-size: 1.8rem;
+}
