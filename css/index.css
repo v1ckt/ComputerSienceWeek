@@ -248,8 +248,8 @@ button img {
 
 .persons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8rem;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 3rem;
     align-items: baseline;
     justify-items: center;
 }
@@ -278,7 +278,7 @@ button img {
     z-index: -1;
 }
 .copy {
-    margin-bottom: -5rem;
+    margin: 2rem 0 -4rem 0;
     display: flex;
     flex-direction: column;
     text-align: center;
