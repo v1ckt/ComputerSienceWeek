@@ -86,7 +86,8 @@
     header {display: none;}
 
     html, body {
-        scroll-snap-type: y proximity;
+        scroll-snap-type: y mandatory;
+        scroll-snap-stop: always;
     }
 
     .secao {
