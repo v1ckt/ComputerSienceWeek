@@ -17,7 +17,7 @@ for (var i = 0; i < elements.length; i++) {
 }
 }, 100);
 
-window.onload = function () {window.location.href = "index.html#inicio"; }
+// window.onload = function () {window.location.href = "index.html#inicio"; }
 
 window.onresize = function() {
     var url = window.location.href;
